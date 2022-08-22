@@ -156,6 +156,7 @@
                               <img class="mx-auto" src="images/under-line.png" alt="">
                           </div>
                     </div>
+
                     <!-- list-card-2 -->
                     <div class="text-center">
                         <div class=" w-72 h-full bg-dark-100 shadow-xl text-gray-500 border-solid border-2 border-gray-700">
@@ -165,25 +166,25 @@
                               <img class=" mb-4 mx-auto" src="images/under-line.png" alt="">
 
                                 <label for="">Per Player:</label>
-                                <input class=" h-10 bg-slate-900 border " type="text">
+                                <input id="per-player-input-value" class=" h-10 bg-slate-900 border " type="text">
                               
                               <div class=" my-4 ">
-                                <button class="mx-auto btn btn-wide bg-blue-600 ">Calculate</button> 
+                                <button id="btn-calculate" class="mx-auto btn btn-wide bg-blue-600 ">Calculate</button> 
                                 
                                 
-                                <p class="mt-4 mb-3">Player Expenses: $00</p>
+                                <p class="mt-4 mb-3">Player Expenses: $<span id="player-expenses">00</span></p>
 
-                                <label for="">Manager:</label>
-                                <input class="h-10  bg-slate-900 border " type="text">
+                                <label  for="">Manager:</label>
+                                <input id="manager-cost" class="h-10  bg-slate-900 border " type="text">
 
-                                <label for="">Coach:</label>
-                                <input class="h-10  bg-slate-900 border my-5" type="text">
+                                <label  for="">Coach:</label>
+                                <input id="coach-cost" class="h-10  bg-slate-900 border my-5" type="text">
 
 
                                 <div class=" mt-3 ">
-                                  <button class="mx-auto btn btn-wide bg-blue-600 ">Calculate Total</button>
+                                  <button id="btn-calculate-total" class="mx-auto btn btn-wide bg-blue-600 ">Calculate Total</button>
 
-                                  <p class="mt-4">Total: $00</p>
+                                  <p  class="mt-4">Total: $<span id="total">00</span></p>
 
 
                               </div>
