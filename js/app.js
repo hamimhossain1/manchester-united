@@ -18,35 +18,30 @@ function showPlayersName(playersList){
         `;
         nameList.appendChild(tr);
     }
-
-    
 };
 
 // get players name list //
 
 function addToList(element){
     const playersName = element.parentNode.parentNode.children[0].innerText;
-    
-    playersList.push(playersName);
-
+    if(playersList.length<5){
+        playersList.push(playersName);
+        element.disabled = true;
+    }
+    else{
+        alert('Your limit not more then five.')
+    }
     showPlayersName(playersList);
-
 };
 
-
 // calculate player expenses //
-
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const totalPlayers = playersList.length;
-
     const perPlayerValue = getInputValue('per-player-input-value')
     const totalPlayersExpenses = totalPlayers * perPlayerValue;
 
     const playerExpenses = getElementValue('player-expenses');
     setValue('player-expenses', totalPlayersExpenses);
-
-    
-
 });
 
 
@@ -62,8 +57,4 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const totalAmount = playerExpenses+managerCost+coachCost;
     const total = getElementValue('total');
     setValue('total',totalAmount );
-    
-    console.log(playerExpenses)
-
-
 });
