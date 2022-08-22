@@ -37,11 +37,13 @@ function addToList(element){
 // calculate player expenses //
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
+    const totalPlayers = playersList.length;
+
     const perPlayerValue = getInputValue('per-player-input-value')
-    // console.log(perPlayerValue)
+    const totalPlayersExpenses = totalPlayers * perPlayerValue;
 
     const playerExpenses = getElementValue('player-expenses');
-    setValue('player-expenses', perPlayerValue);
+    setValue('player-expenses', totalPlayersExpenses);
 
     
 
