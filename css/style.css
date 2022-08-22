@@ -4,7 +4,6 @@ body{
     /* font-family: 'Poppins', sans-serif; */
     /* font-family: 'Great Vibes', cursive;
     font-family: 'Kaushan Script', cursive; */
-    
 }
 
 *{
@@ -12,16 +11,28 @@ body{
 }
 
 body{
-    background-color: #000000;
-    
-    
+    background-color: #0e0d0d;  
 }
-.header{
-    background: url("images/banner-bg.png");
-}
+
 .text-h{
     font-family: 'Kaushan Script', cursive;
 }
+
 .text-p{
     font-family: 'Great Vibes', cursive;
+}
+
+.text-p-2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-bg-color{
+    background-color: #000000;
+}
+
+.main-color{
+    background-color: #0e0d0d;
+}
+hr{
+    color: #504a4a;
 }
