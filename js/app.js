@@ -1,5 +1,7 @@
 const playersList = [];
 
+// set player name list on display //
+
 function showPlayersName(playersList){
     const nameList = document.getElementById('name-list');
     nameList.innerText = '';
@@ -15,13 +17,12 @@ function showPlayersName(playersList){
         <th class="text-slate-400">${playersNameList}</th>
         `;
         nameList.appendChild(tr);
-
-        console.log(playersNameList)
     }
 
     
 };
 
+// get players name list //
 
 function addToList(element){
     const playersName = element.parentNode.parentNode.children[0].innerText;
@@ -33,17 +34,7 @@ function addToList(element){
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
+// calculate player expenses //
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const perPlayerValue = getInputValue('per-player-input-value')
@@ -56,6 +47,8 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
 
 });
 
+
+// calculate total expenses//
 
 document.getElementById('btn-calculate-total').addEventListener('click', function(){
     const managerCost = getInputValue('manager-cost');
