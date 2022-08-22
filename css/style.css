@@ -1,4 +1,27 @@
+/*--- genarel css style --- */
 body{
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Great Vibes', cursive;
+    font-family: 'Kaushan Script', cursive; */
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    
+    
+}
+.header{
+    background: url("images/banner-bg.png");
+}
+.text-h{
+    font-family: 'Kaushan Script', cursive;
+}
+.text-p{
+    font-family: 'Great Vibes', cursive;
 }
