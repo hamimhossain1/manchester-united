@@ -65,7 +65,7 @@
                               <h2 class="card-title">Neymar Jr</h2>
                               <p class="text-xs text-gray-500">36 Goals . 120 Assist</p>
                               <div class="card-actions mt-3">
-                                <button class="btn btn-wide bg-blue-600 ">SELECT</button>       
+                                <button onclick="addToList(this)" class="btn btn-wide bg-blue-600 ">SELECT</button>       
                               </div>
                             </div>
                           </div>
@@ -80,7 +80,7 @@
                               <h2 class="card-title">Lionel Messi</h2>
                               <p class="text-xs text-gray-500">400 Goals . 300 Assist</p>
                               <div class="card-actions mt-3">
-                                <button class="btn btn-wide bg-blue-600 ">SELECT</button>       
+                                <button onclick="addToList(this)" class="btn btn-wide bg-blue-600 ">SELECT</button>       
                               </div>
                             </div>
                           </div>
@@ -95,7 +95,7 @@
                               <h2 class="card-title">Sergio Ramos</h2>
                               <p class="text-xs text-gray-500">100 Goals . 150 Assist</p>
                               <div class="card-actions mt-3">
-                                <button class="btn btn-wide bg-blue-600 ">SELECT</button>       
+                                <button onclick="addToList(this)" class="btn btn-wide bg-blue-600 ">SELECT</button>       
                               </div>
                             </div>
                           </div>
@@ -110,7 +110,7 @@
                               <h2 class="card-title">Renato Sanches</h2>
                               <p class="text-xs text-gray-500">99 Goals . 188 Assist</p>
                               <div class="card-actions mt-3">
-                                <button class="btn btn-wide bg-blue-600 ">SELECT</button>       
+                                <button onclick="addToList(this)" class="btn btn-wide bg-blue-600 ">SELECT</button>       
                               </div>
                             </div>
                           </div>
@@ -125,7 +125,7 @@
                               <h2 class="card-title">Kylian Mbappe</h2>
                               <p class="text-xs text-gray-500">144 Goals . 172 Assist</p>
                               <div class="card-actions mt-3">
-                                <button class="btn btn-wide bg-blue-600 ">SELECT</button>       
+                                <button onclick="addToList(this)" class="btn btn-wide bg-blue-600 ">SELECT</button>       
                               </div>
                             </div>
                           </div>
@@ -140,7 +140,7 @@
                               <h2 class="card-title">Vitor Machado</h2>
                               <p class="text-xs text-gray-500">192 Goals . 132 Assist</p>
                               <div class="card-actions mt-3">
-                                <button class="btn btn-wide bg-blue-600 ">SELECT</button>       
+                                <button onclick="addToList(this)" class="btn btn-wide bg-blue-600 ">SELECT</button>       
                               </div>
                             </div>
                           </div>
@@ -153,8 +153,14 @@
                     <div>
                         <div class="h-64 w-72 bg-dark-100 shadow-xl text-white border-solid border-2 border-gray-700">
                               <h2 class="text-center">Selected-V</h2>
-                              <img class="mx-auto" src="images/under-line.png" alt="">
+                              <img class="mx-auto mb-8" src="images/under-line.png" alt="">
+                          
+
+                          <!-- dynamic name list  -->
+                          <div id="name-list">
+                            
                           </div>
+                        </div>
                     </div>
 
                     <!-- list-card-2 -->
