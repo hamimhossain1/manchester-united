@@ -25,7 +25,7 @@ function addToList(element){
         element.disabled = true;
     }
     else{
-        alert('Your limit not more then five.')
+        alert('Your limit not more then five players.')
     }
     showPlayersName(playersList);
 };
@@ -34,8 +34,8 @@ function addToList(element){
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const totalPlayers = playersList.length;
     const perPlayerValue = getInputValue('per-player-input-value')
-    if(isNaN(perPlayerValue)){
-        alert('Please give number.')
+    if(isNaN(perPlayerValue) || perPlayerValue<1){
+        alert('Please give numbers value more then zero.')
         return;
     }
     const totalPlayersExpenses = totalPlayers * perPlayerValue;
@@ -50,8 +50,8 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const managerCost = getInputValue('manager-cost');
     
     const coachCost = getInputValue('coach-cost');
-    if(isNaN(managerCost) || isNaN(coachCost)){
-        alert('Please enter number in both input fields.')
+    if(isNaN(managerCost) || managerCost<1 || isNaN(coachCost) || coachCost<1){
+        alert('Please enter number in both input fields and value should be more then zero.')
         return;
     }
     const playerExpenses = getElementValue('player-expenses');
